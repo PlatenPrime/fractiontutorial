@@ -28,7 +28,7 @@ function App() {
 	for (let i = 0; i < numParts; i++) {
 		const isRed = i < numRedParts;
 		const color = isRed ? 'bg-blue-500' : 'bg-yellow-500';
-		parts.push(<div key={i} className={`w-8 h-8 m-1 ${color} border-2 border-gray-500`}>{i + 1}</div>);
+		parts.push(<div key={i} className={`w-8 h-8 flex justify-center items-center m-1 ${color} border-2 border-gray-500`}>{i + 1}</div>);
 	}
 
 
@@ -37,7 +37,7 @@ function App() {
 
 
 	return (
-		<div className="flex flex-col items-center mt-16">
+		<div className="flex flex-col items-center my-4 bg-white bg-opacity-10 rounded-xl container mx-auto p-10">
 
 
 
